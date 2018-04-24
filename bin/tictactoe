@@ -4,7 +4,7 @@ require_relative '../config/environment'
 
 puts "Welcome to Tic-Tac-Toe!"
 
-case player_count
+case game.start
 when 0
 
 when 1
