@@ -3,8 +3,7 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic-Tac-Toe!"
-puts "How many players? (0-2):"
-player_count = gets.strip.to_i
+
 case player_count
 when 0
 
@@ -17,4 +16,5 @@ when 2
   game = Game.new(first_player, second_player, board)
   board.display
   game.play
+  game.play_again?
 end
