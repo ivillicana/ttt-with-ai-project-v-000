@@ -61,4 +61,14 @@ WIN_COMBINATIONS = [
     end
     won? ? (puts "Congratulations #{self.winner}!") : (puts "Cat's Game!")
   end
+
+  def play_again?
+    puts "Would you like to play again (Y/N):"
+    input = gets.strip.to_upcase
+    if input = "Y" || "YES"
+      self.start
+    else
+      puts "Thanks for playing!!!"
+    end
+  end
 end
