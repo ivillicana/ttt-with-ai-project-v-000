@@ -1,3 +1,22 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+puts "Welcome to Tic-Tac-Toe!"
+puts "How many players? (0-2):"
+player_count = gets.strip.to_i
+case player_count
+when 0
+
+when 1
+
+when 2
+  puts "First Player Name (X):"
+  first_player = gets.strip
+  first_player = Players::Human.new("X")
+  puts "Second Player name (O):"
+  second_player = gets.strip
+  second_player = Players::Human.new("O")
+  game = Game.new(first_player, second_player)
+  
+end
