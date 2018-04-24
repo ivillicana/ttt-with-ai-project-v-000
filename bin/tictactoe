@@ -11,12 +11,9 @@ when 0
 when 1
 
 when 2
-  puts "First Player Name (X):"
-  first_player = gets.strip
   first_player = Players::Human.new("X")
-  puts "Second Player name (O):"
-  second_player = gets.strip
   second_player = Players::Human.new("O")
-  game = Game.new(first_player, second_player)
-
+  board = Board.new
+  game = Game.new(first_player, second_player, board)
+  game.play
 end
