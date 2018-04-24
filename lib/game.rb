@@ -52,6 +52,7 @@ WIN_COMBINATIONS = [
       self.turn
     end
     @board.update(input, self.current_player)
+    @board.display
   end
 
   def play

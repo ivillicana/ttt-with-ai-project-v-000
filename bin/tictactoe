@@ -18,5 +18,5 @@ when 2
   second_player = gets.strip
   second_player = Players::Human.new("O")
   game = Game.new(first_player, second_player)
-  
+
 end
