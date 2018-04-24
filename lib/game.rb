@@ -66,8 +66,7 @@ WIN_COMBINATIONS = [
     puts "Would you like to play again (Y/N):"
     input = gets.strip.upcase
     if input = "Y" || "YES"
-      puts "How many players? (0-2):"
-      player_count = gets.strip.to_i
+      Game.start
     else
       puts "Thanks for playing!!!"
     end
