@@ -71,4 +71,9 @@ WIN_COMBINATIONS = [
       puts "Thanks for playing!!!"
     end
   end
+
+  def start
+    puts "How many players? (0-2):"
+    player_count = gets.strip.to_i
+  end
 end
