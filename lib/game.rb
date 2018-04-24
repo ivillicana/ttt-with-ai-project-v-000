@@ -65,7 +65,7 @@ WIN_COMBINATIONS = [
   def play_again?
     puts "Would you like to play again (Y/N):"
     input = gets.strip.upcase
-    if input = "Y" || "YES"
+    if input == "Y" || input == "YES"
       Game.start
     else
       puts "Thanks for playing!!!"
