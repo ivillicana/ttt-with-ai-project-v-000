@@ -79,9 +79,21 @@ WIN_COMBINATIONS = [
 
     case player_count
     when 0
-
+      first_player = Players::Computer.new("X")
+      second_player = Players::Computer.new("O")
+      board = Board.new
+      game = Game.new(first_player, second_player, board)
+      board.display
+      game.play
+      game.play_again?
     when 1
-
+      first_player = Players::Human.new("X")
+      second_player = Players::Computer.new("O")
+      board = Board.new
+      game = Game.new(first_player, second_player, board)
+      board.display
+      game.play
+      game.play_again?
     when 2
       first_player = Players::Human.new("X")
       second_player = Players::Human.new("O")
