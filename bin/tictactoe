@@ -15,5 +15,6 @@ when 2
   second_player = Players::Human.new("O")
   board = Board.new
   game = Game.new(first_player, second_player, board)
+  board.display
   game.play
 end
